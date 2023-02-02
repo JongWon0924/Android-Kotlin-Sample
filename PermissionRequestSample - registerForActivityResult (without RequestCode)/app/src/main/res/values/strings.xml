@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PermissionRequestSample</string>
+    <string name="permission_request">권한 요청하기</string>
+</resources>
