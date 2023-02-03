@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
     
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     
+    private val takePicturePreviewLauncher = registerForActivityResult(ActivityResultContracts.TakePicturePreview()) { result ->
+        binding.imagePreview.setImageBitmap(result)
+    }
+    
     private val previewPictureLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         result.data?.extras?.get("data")?.let {
             binding.imagePreview.setImageBitmap(it as Bitmap)
@@ -38,7 +42,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         
         binding.btnTakePicturePreview.setOnClickListener {
-            previewPictureLauncher.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+            // **** DEPRECATED ****
+//            previewPictureLauncher.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+            
+            takePicturePreviewLauncher.launch(null)
         }
         
         binding.btnTakePicture.setOnClickListener {
