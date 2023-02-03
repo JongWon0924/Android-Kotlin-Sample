@@ -5,12 +5,10 @@ import android.graphics.Bitmap
 import android.graphics.ImageDecoder
 import android.os.Bundle
 import android.os.Environment
-import android.provider.DocumentsContract
 import android.provider.MediaStore
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
-import androidx.documentfile.provider.DocumentFile
 import com.example.activityresultcallbacksample.databinding.ActivityMainBinding
 import java.io.File
 import java.text.SimpleDateFormat
@@ -38,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-    
+        
         binding.btnTakePicturePreview.setOnClickListener {
             previewPictureLauncher.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
         }
