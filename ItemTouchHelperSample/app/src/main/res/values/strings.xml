@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ItemTouchHelperSample</string>
+    <string name="calories">%d kcal</string>
+</resources>
