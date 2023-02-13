@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NotificationSample</string>
+    <string name="priority_notify">Priority Notify</string>
+    <string name="normal_notify">Normal Notify</string>
+    <string name="action_notify">Action Notify</string>
+    <string name="reply_notify">REPLY NOTIFY</string>
+    <string name="big_style_notify">Big style Notify</string>
+    <string name="inbox_style_notify">Inbox Style Notify</string>
+</resources>

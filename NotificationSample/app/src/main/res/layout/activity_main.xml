@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_notify" />
+
+    <Button
+        android:id="@+id/btnBigStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/big_style_notify" />
+
+    <Button
+        android:id="@+id/btnInboxStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inbox_style_notify" />
+
+    <Button
+        android:id="@+id/btnMessageStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message Style Notify" />
+
+    <Button
+        android:id="@+id/btnPriorityNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/priority_notify" />
+
+    <Button
+        android:id="@+id/btnActionNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_notify" />
+
+    <Button
+        android:id="@+id/btnReplyNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reply_notify" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
