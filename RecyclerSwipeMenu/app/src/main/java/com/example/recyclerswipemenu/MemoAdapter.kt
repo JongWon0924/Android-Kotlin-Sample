@@ -109,7 +109,6 @@ class MemoAdapter : RecyclerView.Adapter<MemoViewHolder>() {
         notifyItemRemoved(position)
     }
     
-    
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemoViewHolder {
         val binding = ItemMemoBinding.inflate(
             LayoutInflater.from(parent.context),
@@ -119,7 +118,6 @@ class MemoAdapter : RecyclerView.Adapter<MemoViewHolder>() {
         val holder = MemoViewHolder(binding)
         
         binding.btnDelete.setOnClickListener {
-//            Toast.makeText(parent.context, "Clicked..", Toast.LENGTH_SHORT).show()
             Log.w("Button", "Button ${holder.adapterPosition} clicked!!")
             remove(holder.adapterPosition)
         }

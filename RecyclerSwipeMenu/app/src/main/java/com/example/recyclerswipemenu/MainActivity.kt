@@ -37,40 +37,6 @@ class MainActivity : AppCompatActivity() {
         override fun onMove(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, target: RecyclerView.ViewHolder): Boolean = false
         
         override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-//            viewHolder.itemView.apply {
-//                findViewById<Button>(R.id.btnDelete).apply {
-//                    visibility = View.VISIBLE
-//                }
-//            }
-//            viewHolder.itemView.requestLayout()
-//            viewHolder.itemView.invalidate()
-//            viewHolder.itemView.findViewById<Button>(R.id.btnDelete).requestLayout()
-//            viewHolder.itemView.findViewById<Button>(R.id.btnDelete).invalidate()
-//            viewHolder.itemView.findViewById<Button>(R.id.btnDelete).requestFocus()
-//            adapter.notifyItemChanged(viewHolder.adapterPosition)
-
-//            val downTime = SystemClock.uptimeMillis()
-//            val eventTime = SystemClock.uptimeMillis() + 100
-//            val x = viewHolder.itemView.left + 10f
-//            val y = viewHolder.itemView.top + 10f
-//
-//            val metaState = 0
-//            val motionEvent = MotionEvent.obtain(
-//                downTime,
-//                eventTime,
-//                MotionEvent.ACTION_UP,
-//                x,
-//                y,
-//                metaState
-//            )
-//
-//            viewHolder.itemView.dispatchTouchEvent(motionEvent)
-//            viewHolder.itemView.dispatchTouchEvent(motionEvent)
-//            viewHolder.itemView.dispatchTouchEvent(motionEvent)
-//            viewHolder.itemView.dispatchTouchEvent(motionEvent)
-//            viewHolder.itemView.dispatchTouchEvent(motionEvent)
-//            viewHolder.itemView.dispatchTouchEvent(motionEvent)
-//            viewHolder.itemView.dispatchTouchEvent(motionEvent)
         }
 
         override fun onChildDrawOver(
@@ -87,7 +53,6 @@ class MainActivity : AppCompatActivity() {
             if (x == -250f) {
                 viewHolder.itemView.findViewById<Button>(R.id.btnDelete).visibility = View.VISIBLE
                 super.onChildDrawOver(c, recyclerView, viewHolder, 0f, dY, actionState, isCurrentlyActive)
-//                viewHolder.itemView.invalidate()
             } else {
                 super.onChildDrawOver(c, recyclerView, viewHolder, x, dY, actionState, isCurrentlyActive)
             }
